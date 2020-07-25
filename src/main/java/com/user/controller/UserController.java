@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @GetMapping(path = "/user", produces = "application/json")
+    @GetMapping(path = "/user1", produces = "application/json")
     public ResponseEntity<String> getUser() {
         System.out.println("GET /user");
         return ResponseEntity.ok("{ \"name\" : \"Alexey\" }");
