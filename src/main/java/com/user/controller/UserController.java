@@ -9,7 +9,7 @@ public class UserController {
 
     @GetMapping(path = "/user1", produces = "application/json")
     public ResponseEntity<String> getUser() {
-        System.out.println("GET /user дополнительную информацию");
+        System.out.println("GET /user дополнительная информация которая очень нужна в разрабоке");
         return ResponseEntity.ok("{ \"name\" : \"Alexey\" }");
     }
 }
