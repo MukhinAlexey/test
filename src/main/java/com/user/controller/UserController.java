@@ -9,6 +9,7 @@ public class UserController {
 
     @GetMapping(path = "/user", produces = "application/json")
     public ResponseEntity<String> getUser() {
+        System.out.println("GET /user");
         return ResponseEntity.ok("{ \"name\" : \"Alexey\" }");
     }
 }
